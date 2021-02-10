@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
@@ -15,22 +16,27 @@
       </Label>
       <VBox layoutX="126.0" layoutY="155.0">
          <children>
-            <Label text="Face Name:">
+            <Label fx:id="faceNameLabel" text="Face Name:">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
-            <Label text="Suit:">
+            <Label fx:id="suitLabel" text="Suit:">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
-            <Label text="Value: ">
+            <Label fx:id="valueLabel" text="Value: ">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
          </children>
       </VBox>
+      <Button layoutX="136.0" layoutY="294.0" mnemonicParsing="false" onAction="#dealTopCard" text="Deal Top Card">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
