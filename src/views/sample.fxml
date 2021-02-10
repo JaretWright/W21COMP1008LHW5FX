@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Controller">
+   <children>
+      <Label layoutX="300.0" layoutY="30.0" text="Card Display">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <VBox layoutX="126.0" layoutY="155.0">
+         <children>
+            <Label text="Face Name:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label text="Suit:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label text="Value: ">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
