@@ -23,6 +23,7 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("views/cardView.fxml"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
+        stage.setTitle("Single Card View");
         stage.show();
     }
 }
