@@ -16,16 +16,33 @@ public class CardViewController implements Initializable {
     private Label suitLabel;
 
     @FXML
+    private Label errorMsgLabel;
+
+    @FXML
     private ImageView imageView;
 
     private DeckOfCards deckOfCards;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        errorMsgLabel.setVisible(false);
         deckOfCards = new DeckOfCards();
+        showNextCard();
+    }
+
+    @FXML
+    private void showNextCard()
+    {
         Card card = deckOfCards.dealTopCard();
-        faceNameLabel.setText(card.getFaceName());
-        suitLabel.setText(card.getSuit());
-        imageView.setImage(card.getImage());
+        if (card != null) {
+            faceNameLabel.setText(card.getFaceName());
+            suitLabel.setText(card.getSuit());
+            imageView.setImage(card.getImage());
+        }
+        else
+        {
+            errorMsgLabel.setVisible(true);
+            errorMsgLabel.setText("No cards left");
+        }
     }
 }
