@@ -13,12 +13,12 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CardViewController">
    <children>
-      <VBox alignment="TOP_CENTER" layoutX="-7.0" layoutY="-7.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="-7.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="-7.0">
+      <VBox alignment="TOP_CENTER" layoutX="-7.0" layoutY="-7.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <HBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="30.0">
                <children>
                   <ImageView fx:id="imageView" fitHeight="333.0" fitWidth="242.0" pickOnBounds="true" preserveRatio="true" />
-                  <VBox alignment="CENTER">
+                  <VBox alignment="CENTER" spacing="10.0">
                      <children>
                         <GridPane maxHeight="150.0" prefHeight="150.0" prefWidth="343.0">
                           <columnConstraints>
@@ -52,7 +52,12 @@
                               </Label>
                            </children>
                         </GridPane>
-                        <Button mnemonicParsing="false" onAction="#showNextCard" text="View Next Card">
+                        <Button mnemonicParsing="false" onAction="#showNextCard" prefWidth="240.0" text="View Next Card">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="80.0" layoutY="243.0" mnemonicParsing="false" onAction="#changeToCardHandView" prefWidth="240.0" text="View Hand of Cards">
                            <font>
                               <Font size="23.0" />
                            </font>
